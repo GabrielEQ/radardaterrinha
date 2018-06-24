@@ -13,6 +13,8 @@ import { NotificationsComponent } from '../../notifications/notifications.compon
 import { ChartsModule } from 'ng2-charts';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ToastrModule } from 'ngx-toastr';
+import { RotaComponent } from '../../rota/rota.component';
+import { OcorrenciaComponent } from '../../ocorrencias/ocorrencia.component';
 
 @NgModule({
   imports: [
@@ -31,6 +33,8 @@ import { ToastrModule } from 'ngx-toastr';
     IconsComponent,
     MapsComponent,
     NotificationsComponent,
+    RotaComponent,
+    OcorrenciaComponent
   ]
 })
 
