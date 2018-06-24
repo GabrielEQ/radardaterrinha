@@ -10,7 +10,7 @@ export class DashboardComponent implements OnInit {
   public lineBigDashboardChartType;
   public gradientStroke;
   public chartColor;
-  public canvas : any;
+  public canvas: any;
   public ctx;
   public gradientFill;
   public lineBigDashboardChartData:Array<any>;
@@ -96,7 +96,7 @@ export class DashboardComponent implements OnInit {
          pointHoverBorderColor: this.chartColor,
        }
      ];
-    this.lineBigDashboardChartLabels = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
+    this.lineBigDashboardChartLabels = ["JAN", "FEV", "MAR", "ABR", "MAI", "JUN", "JUL", "AGO", "SET", "OUT", "NOV", "DEZ"];
     this.lineBigDashboardChartOptions = {
 
           layout: {
@@ -111,7 +111,7 @@ export class DashboardComponent implements OnInit {
           tooltips: {
             backgroundColor: '#fff',
             titleFontColor: '#333',
-            bodyFontColor: '#666',
+            bodyFontColor: '#777',
             bodySpacing: 4,
             xPadding: 12,
             mode: "nearest",
@@ -286,7 +286,7 @@ export class DashboardComponent implements OnInit {
          backgroundColor: this.gradientFill
        }
      ];
-    this.lineChartLabels = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+    this.lineChartLabels = ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez"];
     this.lineChartOptions = this.gradientChartOptionsConfiguration;
 
     this.lineChartType = 'line';
@@ -358,7 +358,7 @@ export class DashboardComponent implements OnInit {
        pointBackgroundColor: "#2CA8FF",
      }
    ];
-    this.lineChartGradientsNumbersLabels = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    this.lineChartGradientsNumbersLabels = ["Janeiro", "Favereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
     this.lineChartGradientsNumbersOptions = {
         maintainAspectRatio: false,
         legend: {
