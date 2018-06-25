@@ -9,7 +9,7 @@
                     <span class="navbar-toggler-bar bar3"></span>
                 </button>
             </div>
-            <a class="navbar-brand" href="#pablo">{{getTitle()}}</a>
+            <a class="navbar-brand">{{getTitle()}}</a>
         </div>
         <button class="navbar-toggler" type="button" (click)="collapse()"
           [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample">
@@ -49,7 +49,7 @@
                 </p>
               </a>
               <div class="dropdown-menu dropdown-menu-right" ngbDropdownMenu aria-labelledby="dropdownBasic1">
-                <a class="dropdown-item" href="#">Sair</a>
+                <a class="dropdown-item" href="#" routerLink="[/]">Sair</a>
                 <a class="dropdown-item" href="#">Editar perfil</a>
               </div>
             </li>

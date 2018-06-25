@@ -14,7 +14,13 @@ import { ChartsModule } from 'ng2-charts';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ToastrModule } from 'ngx-toastr';
 import { RotaComponent } from '../../rota/rota.component';
-import { OcorrenciaComponent } from '../../ocorrencias/ocorrencia.component';
+import { OcorrenciaComponent } from '../../ocorrencia/ocorrencia.component';
+import { VendedorComponent } from '../../vendedor/vendedor.component';
+import { EstabelecimentoComponent } from '../../estabelecimento/estabelecimento.component';
+import { HomeComponent } from '../../ems/home/home.component';
+import { AddComponent } from '../../ems/add/add.component';
+import { EditComponent } from '../../ems/edit/edit.component';
+
 
 @NgModule({
   imports: [
@@ -34,7 +40,12 @@ import { OcorrenciaComponent } from '../../ocorrencias/ocorrencia.component';
     MapsComponent,
     NotificationsComponent,
     RotaComponent,
-    OcorrenciaComponent
+    OcorrenciaComponent,
+    VendedorComponent,
+    EstabelecimentoComponent,
+    HomeComponent,
+    AddComponent,
+    EditComponent
   ]
 })
 

@@ -19,13 +19,15 @@ export class NavbarComponent implements OnInit {
 
     public isCollapsed = true;
 
-    constructor(location: Location,  private element: ElementRef, private router: Router) {
+    constructor(location: Location,  
+        private element: ElementRef, 
+        private router: Router) {
       this.location = location;
           this.sidebarVisible = false; 
     }
 
     ngOnInit(){
-        this.user = "Gabriel";
+      this.user = "Gabriel";
       this.listTitles = ROUTES.filter(listTitle => listTitle);
       const navbar: HTMLElement = this.element.nativeElement;
       this.toggleButton = navbar.getElementsByClassName('navbar-toggler')[0];
@@ -152,6 +154,6 @@ export class NavbarComponent implements OnInit {
               return this.listTitles[item].title;
           }
       }
-      return 'Dashboard';
+      return titlee;
     }
 }
