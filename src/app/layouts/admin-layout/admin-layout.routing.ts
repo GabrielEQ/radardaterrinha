@@ -11,8 +11,10 @@ import { RotaComponent } from '../../rota/rota.component';
 import { OcorrenciaComponent } from '../../ocorrencia/ocorrencia.component';
 import { VendedorComponent } from '../../vendedor/vendedor.component';
 import { EstabelecimentoComponent } from '../../estabelecimento/estabelecimento.component';
-import { HomeComponent } from '../../ems/home/home.component';
-import { AddComponent } from '../../ems/add/add.component';
+import { BookComponent } from '../../book/book.component';
+import { BookDetailComponent } from '../../book-detail/book-detail.component';
+import { BookCreateComponent } from '../../book-create/book-create.component';
+import { BookEditComponent } from '../../book-edit/book-edit.component';
 
 export const AdminLayoutRoutes: Routes = [
     { path: 'dashboard',        component:  DashboardComponent },
@@ -22,6 +24,8 @@ export const AdminLayoutRoutes: Routes = [
     { path: 'estabelecimentos', component:  EstabelecimentoComponent},
     { path: 'user-profile',     component:  UserProfileComponent },
     { path: 'icons',            component:  IconsComponent },
-    { path: 'home',             component:  HomeComponent}
-    { path: 'add',             component:  AddComponent},
+    { path: 'books',            component: BookComponent},
+    { path: 'book-details/:id', component: BookDetailComponent},
+    { path: 'book-create',      component: BookCreateComponent},
+    { path: 'book-edit/:id',    component: BookEditComponent}
 ];
