@@ -11,8 +11,6 @@ import { RotaComponent } from '../../rota/rota.component';
 import { OcorrenciaComponent } from '../../ocorrencia/ocorrencia.component';
 import { VendedorComponent } from '../../vendedor/vendedor.component';
 import { EstabelecimentoComponent } from '../../estabelecimento/estabelecimento.component';
-import { HomeComponent } from '../../ems/home/home.component';
-import { AddComponent } from '../../ems/add/add.component';
 
 export const AdminLayoutRoutes: Routes = [
     { path: 'dashboard',        component:  DashboardComponent },
@@ -21,7 +19,5 @@ export const AdminLayoutRoutes: Routes = [
     { path: 'vendedores',       component:  VendedorComponent},
     { path: 'estabelecimentos', component:  EstabelecimentoComponent},
     { path: 'user-profile',     component:  UserProfileComponent },
-    { path: 'icons',            component:  IconsComponent },
-    { path: 'home',             component:  HomeComponent}
-    { path: 'add',             component:  AddComponent},
+    { path: 'icons',            component:  IconsComponent }
 ];

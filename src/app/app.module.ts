@@ -11,7 +11,6 @@ import { ComponentsModule } from './components/components.module';
 import { AppComponent } from './app.component';
 
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
-import { EmpService } from './emp.service';
 
 
 @NgModule({
@@ -29,7 +28,7 @@ import { EmpService } from './emp.service';
     AdminLayoutComponent,
 
   ],
-  providers: [EmpService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
